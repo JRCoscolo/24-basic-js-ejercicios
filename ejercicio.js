@@ -1,8 +1,13 @@
-//Ejercicio 1.
-//- Crea un array llamado `colors` con los colores "rojo", "verde", "azul", "amarillo".
-//- Imprime el tercer color del array.
-let colors = ["rojo", "verde", "azul", "amarillo"]
-console.log(colors[2])
-//Ejercicio 2.
-//- Imprime el último elemento del array `colors` sin usar su índice explícitamente.
-console.log(colors[colors.length - 1])
+//Ejercicio 3
+//- Crea una matriz `matrix` que represente la siguiente tabla:
+
+//``` javascript
+//1 2 3
+//4 5 6
+//7 8 9
+//```
+
+//- Imprime el número que se encuentra en la segunda fila y tercera columna.
+let matrix = [[1,2,3], [4,5,6], [7,8,9]]
+        
+console.log(matrix[1][2]);
