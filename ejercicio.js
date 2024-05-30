@@ -1,18 +1,21 @@
-//Ejercicio 7
-//- Sumar Todos los Elementos de una Matriz.
-//Escribe una función que reciba una matriz y devuelva la suma de todos sus elementos
+//Ejercicio 8
+//- Transponer una Matriz
+//Escribe una función que reciba una matriz y devuelva su transpuesta (intercambiar filas por columnas)
 
 
 let colors = ["rojo", "verde", "azul", "amarillo"]
-let matrix = [[1,2,3], [4,5,6], [7,8,9]]
-function sumMatrix(matrix) {
-    let sum = 0;
-    for (let i = 0; i < matrix.length; i++) {
-        for (let j = 0; j < matrix[i].length; j++) {
-            sum += matrix[i][j];
+let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+function transponer(matrix) {
+    let transpuesta = [];
+    for (let i = 0; i < matrix[0].length; i++) {
+        transpuesta[i] = [];
+        for (let j = 0; j < matrix.length; j++) {
+            transpuesta[i][j] = matrix[j][i];
         }
     }
-    return sum
+    return transpuesta;
 }
 
-console.log(sumMatrix(matrix));
+let transposedmatrix = transponer(matrix)
+console.log(transposedmatrix)
