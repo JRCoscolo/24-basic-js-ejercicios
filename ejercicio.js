@@ -1,6 +1,6 @@
-//Ejercicio 5
-//- Recorrer un Array Simple.
-//Usa un bucle `for` para imprimir todos los elementos del array `colors`
+//Ejercicio 6
+//- Recorrer un Arreglo.
+//Usa un bucle `for` anidado para imprimir todos los elementos de la matriz `matrix`
 
 
 let colors = ["rojo", "verde", "azul", "amarillo"]
