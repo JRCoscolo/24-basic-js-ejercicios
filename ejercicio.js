@@ -1,8 +1,12 @@
-//Ejercicio 4
-//- Cambia los elementos de una Matriz.
-//Cambia el elemento de la fila 1 y segunda columna a 20
+//Ejercicio 5
+//- Recorrer un Array Simple.
+//Usa un bucle `for` para imprimir todos los elementos del array `colors`
 
 
+let colors = ["rojo", "verde", "azul", "amarillo"]
 let matrix = [[1,2,3], [4,5,6], [7,8,9]]
- matrix[0][1] = 20       
-console.log(matrix)
+for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+        console.log(matrix[i][j]);
+    }
+}
