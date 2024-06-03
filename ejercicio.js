@@ -1,11 +1,13 @@
-//Ejercicio 17
-//- Eliminar Duplicados
-// Dado un array `randomNumbers` con números aleatorios, crea una función para eliminar los duplicados
+//Ejercicio 18
+//- Encontrar Elementos Comunes
+// Dado dos arrays `array1` y `array2`, encuentra los elementos comunes entre ellos.
 
 let fruits = ["manzana", "banana", "naranja"]
 let numbers = [1, 2, 3, 4, 5]
 let randomNumbers = [1, 2, 3, 3, 4, 5, 5, 6]
-let uniqueNumbers = [...new Set(randomNumbers)] //Aquí va recorriendo el array 
-//y discrimina el valor duplicado, lo hace con una nueva variable, 
-//y un array que tiene una operación dentro
-console.log(uniqueNumbers)
+let array1 = [1, 2, 3, 4];
+let array2 = [3, 4, 5, 6];
+let commonElements = array1.filter((value) => array2.includes(value))// Aquí la variable es una operación.
+//el primero filtra el "value" del primer array
+//y luego lo compara con la inclusión de ese mismo valor y después devuelve los valores coincidentes.
+console.log(commonElements)
