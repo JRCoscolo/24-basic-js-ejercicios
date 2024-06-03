@@ -1,11 +1,11 @@
-//Ejercicio 12
-//- Modificar Arrays
-//Añade "uva" al final del array `fruits`
-//Cambia el segundo elemento del array a "kiwi"
-//Elimina el primer elemento del array
+//Ejercicio 13
+//- Uso de Métodos Básicos
+//Crea un array llamado `numbers` con los números del 1 al 5
+//Usa el método `map` para crear un nuevo array que contenga el cuadrado de cada número
+//Usa el método `filter` para crear un nuevo array que contenga solo los números mayores que 2
 
-let fruits = ["manzana", "banana", "naranja"];
-fruits.push("uva") //push sirve para "empujar" un nuevo elemento al array, por defecto lo pondrá al final.
-fruits[1] = "kiwi" //el cambio del valor de array es muy obvio aqui
-fruits.shift() //la eliminación de un elemento de array, si no se pone nada, por defecto será el primero.
-console.log(fruits)
+let numbers = [1, 2, 3, 4, 5]
+let squares = numbers.map((num) => num * num) //Aquí metemos el método "map"
+let greaterThanTwo = numbers.filter((num) => num > 2) //Y aquí discriminamos los números mayores que 2
+console.log(squares)
+console.log(greaterThanTwo)
