@@ -255,9 +255,8 @@ console.log(sum); // 15
 - Ordena el nuevo array en orden alfabético o numérico según corresponda.
 
 ```javascript
-let combined = fruits.concat(numbers);
-combined.sort(); // Esto ordenará en orden lexicográfico
-console.log(combined);
+
+;
 ```
 
 ### Nivel 4: Ejercicios Prácticos
