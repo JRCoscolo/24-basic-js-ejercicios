@@ -1,8 +1,9 @@
-//Ejercicio 14
-//- Uso de Métodos Básicos
-//Usa un bucle `for` para imprimir cada elemento del array `fruits` en mayúsculas
+//Ejercicio 15
+//- Reducir Arrays
+//Usa el método `reduce` para calcular la suma de todos los elementos del array `numbers`
 
 let fruits = ["manzana", "banana", "naranja"]
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i].toUpperCase());
-  }
+let numbers = [1, 2, 3, 4, 5]
+let sum = numbers.reduce((acc, num) => acc + num, 0) //va recorriendo el array
+//dejándolo en "acc" y "num" y sumando ambos, luego lo recorre y devuelve el valor.
+console.log(sum)
